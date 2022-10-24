@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="JokeApi" customModuleProvider="target">
             <connections>
+                <outlet property="buttonLabel" destination="wGp-aX-Bt1" id="oSf-GQ-IRK"/>
+                <outlet property="textLabel" destination="s92-pF-36I" id="v1M-wk-FAd"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,9 +19,35 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s92-pF-36I">
+                    <rect key="frame" x="0.0" y="443" width="414" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGp-aX-Bt1">
+                    <rect key="frame" x="151" y="557.5" width="112" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="112" id="Chf-fR-A8e"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                    <connections>
+                        <action selector="buttonAction:" destination="-1" eventType="touchUpInside" id="EHB-Iv-7Hj"/>
+                    </connections>
+                </button>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <point key="canvasLocation" x="139" y="64"/>
+            <constraints>
+                <constraint firstItem="s92-pF-36I" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="0Oe-Tc-2Un"/>
+                <constraint firstItem="wGp-aX-Bt1" firstAttribute="top" secondItem="s92-pF-36I" secondAttribute="bottom" constant="94" id="YgS-3p-4qN"/>
+                <constraint firstItem="s92-pF-36I" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="d4r-iP-baD"/>
+                <constraint firstItem="wGp-aX-Bt1" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="pTb-E2-YKB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="s92-pF-36I" secondAttribute="trailing" id="yxM-3G-keh"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="63.616071428571423"/>
         </view>
     </objects>
     <resources>
