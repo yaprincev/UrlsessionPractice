@@ -8,14 +8,17 @@
 import UIKit
 
 class MainViewController: UIViewController {
-
+    @IBOutlet weak var jokeText: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func newJokeButton(_ sender: Any) {
+    }
+    
     /*
     // MARK: - Navigation
 
